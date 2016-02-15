@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>v-for</title>
+	<script src="../bower_components/vue/dist/vue.min.js"></script>
+</head>
+<body>
+		
+	<div id="app">
+		<ul>
+			<li v-for="todo in todos">
+				{{todo.text}}
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		
+		new Vue({
+			el:'#app',
+			data:{
+				todos:[
+					{text:'this is text a'},
+					{text:'this is text b'},
+					{text:'this is text c'}
+				]
+			}
+		})
+
+	</script>
+
+</body>
+</html>

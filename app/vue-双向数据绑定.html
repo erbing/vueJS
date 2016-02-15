@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bidirectional data binding</title>
+	<script src="../bower_components/vue/dist/vue.min.js"></script>
+</head>
+<body>
+	
+	<div id="app">
+
+		<p>{{message}}</p>
+
+		<input type="text" v-model="message"/>	
+
+	</div>
+	
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+				message:'this is data'
+			}
+		})
+	</script>
+	
+</body>
+</html>
